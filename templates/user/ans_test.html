@@ -1,0 +1,22 @@
+
+{% extends 'loging.html' %}
+
+{% block content %}
+	<form method="POST"> {% csrf_token %}
+
+	   		{{ form.question }}<br>
+	   	   {{ form.ans_a }} <br>
+	   	   {{ form.ans_b }}<br>
+	   	   {{ form.ans_c }}<br>
+	   	   {{ form.ans_d }}<br>
+	   
+	   {{ opt.ans_is_carrect }}
+
+	<br>
+	<input type="submit" value="Submit" name="">
+	</form>
+
+
+
+
+{% endblock %}
