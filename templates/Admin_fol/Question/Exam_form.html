@@ -1,0 +1,84 @@
+
+{% extends 'loging.html' %}
+
+{% block content %}
+
+<body class="hold-transition sidebar-mini">
+<!-- ./wrapper -->
+          <table class="table table-striped projects">
+              <thead>
+                  <tr>
+                      <th style="width: 20%">
+                          Question
+                      </th>
+                      <th style="width: 10%">
+                          A
+                      </th>
+                      <th style="width: 10%">
+                          B
+                      </th>
+
+                      <th style="width: 10%">
+                          C
+                      </th>
+
+                      <th style="width: 10%">
+                          D
+                      </th>
+
+                      <th style="width: 10%">
+                          Chose Ans
+                      </th>
+
+                      <th style="width: 10%">
+                          Submit
+                      </th>
+
+                  </tr>
+              </thead>
+              <tbody>
+              	{% for value in form %}
+                  <tr>
+                      <td>
+
+                         	{{value.question}}
+
+                          <br/>
+                        <td>
+
+                         {{value.ans_a}}
+
+                          <br/>
+                        <td>
+                              {{value.ans_b}}
+                          <br/>
+                        <td>
+                              {{value.ans_c}}
+                          <br/>
+                        <td>
+                              {{value.ans_d}}
+                          <br/>
+                        <td>
+                              <!-- here is Options -->
+                              {{opt.ans_is_carrect}}
+                          <br/>
+                        <td>
+                             <input type="submit" value="Submit" name="">
+                          <br/>
+
+                  </tr>
+                  <tr>
+                 {% endfor %}
+              </tbody>
+          </table>
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+{% endblock %}
