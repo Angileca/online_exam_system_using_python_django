@@ -1,0 +1,28 @@
+
+{% extends 'loging.html' %}
+
+{% block content %}
+
+<body class="hold-transition sidebar-mini">
+<!-- ./wrapper -->
+
+	
+	{% for value in form %}
+	<form method="POST"> {% csrf_token %}
+	  <p> {{ value.id }}</p>
+	  <input type="text" name="send1">
+	<br>
+	<input type="submit" value="Submit" name="">
+</form>
+{% endfor %}
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+{% endblock %}
