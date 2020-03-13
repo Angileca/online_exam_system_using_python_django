@@ -43,7 +43,6 @@ CREATE TABLE `Admin_account` (
 
 INSERT INTO `Admin_account` (`id`, `user_name`, `email`, `phone_number`, `user_type`, `password`) VALUES
 (2, 'mukta', 'mukta@gmail.com', '01766523555', 0, 'ccc'),
-(3, 'ashrafi', 'ashjstu@gmail.com', '01708079277', 1, 'aaa'),
 (6, 'xxx', 'xxxx@gmail.com', '14152165455', 0, 'asas');
 
 -- --------------------------------------------------------
